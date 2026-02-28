@@ -28,7 +28,7 @@ def generate_smart_meter_data():
         "anomaly": anomaly_label
     })
 
-    df.to_csv("smart_meter_data.csv", index=False)
+    df.to_csv("data/smart_meter_data.csv", index=False)
     print("Dataset generated successfully!")
 
 # 👇 This must be at the top level, not indented inside the function
