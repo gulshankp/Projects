@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
-# from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout
+# switch to standalone keras layers to avoid unresolved imports
+from keras.layers import LSTM, Dense, Dropout
 
 def build_lstm(input_shape):
     model = keras.Sequential()
